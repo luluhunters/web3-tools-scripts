@@ -18,6 +18,7 @@ web3 工具脚本
 
 solana network scripts
 
+---
 ### ./src/solana/collect.ts
 
 此脚本为归集 `spl-token` 脚本，将 solana 账户中的 `spl-token` 批量归集到主账户。
@@ -33,6 +34,7 @@ solana network scripts
 
 运行命令：`ts-node ./src/solana/collect.ts`运行脚本。
 
+---
 ### ./src/solana/iboss.ts
 
 因 iboss 项目导出的文件格式不统一，故此脚本单独出来。
