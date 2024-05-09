@@ -11,7 +11,7 @@ import { closeAccount, createTransferInstruction } from "@solana/spl-token";
 import { logger } from "../../util/logger";
 
 // rpc
-const rpc = "";
+const rpc = "https://api.mainnet-beta.solana.com";
 //存放json钱包目录
 const dir = "/Users/user1/keys/";
 
@@ -34,9 +34,9 @@ const send = async () => {
   let num = 0;
 
   for (const keyFileName of keyFileNames) {
-    num ++;
+    num++;
     logger.info(`-------------------------Num ${num}-------------------------`);
-    logger.info("当前钱包文件：",keyFileName);
+    logger.info("当前钱包文件：", keyFileName);
     if (keyFileName.indexOf(".json") < 0) {
       continue;
     }

@@ -16,8 +16,7 @@ function splitByDelimiter(str: string, delimiter: string): string[] {
 }
 
 // rpc
-const rpc =
-  "https://little-hardworking-sound.solana-mainnet.quiknode.pro/174fa3efffeb8fc6547f9cea625ed6229a9d148e/";
+const rpc = "https://api.mainnet-beta.solana.com";
 
 //存放json钱包目录
 const dir = "./acc.txt";
