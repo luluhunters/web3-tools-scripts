@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "tools-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "dependencies": {
+    "@caporal/core": "^2.0.7",
+    "@solana/buffer-layout": "^4.0.1",
+    "@solana/buffer-layout-utils": "^0.2.0",
+    "@solana/spl-token": "^0.4.3",
+    "@solana/web3.js": "^1.91.4",
+    "bs58": "^5.0.0",
+    "cli-table": "^0.3.11",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  },
+  "devDependencies": {
+    "@types/cli-table": "^0.3.4",
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.12.10"
+  }
+}
