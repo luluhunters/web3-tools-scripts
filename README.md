@@ -1,6 +1,6 @@
 # WEB3 TOOLS SCRIPTS
 
-web3 工具脚本
+web3 工具脚本，如有 bug 和优化，欢迎提交 PR。
 
 ## Installation
 
@@ -26,12 +26,19 @@ solana network scripts
 
 并关闭 `token account`，退还开通 `token account`时所花费的 sol。
 
+所有 gas 都由主账户支付，不需要分发 gas 到需要归集的钱包。
+
+出现错误一般都是 rpc 的问题，可以重试几遍。
+
+需要 rpc 可以联系我 coolkhz@outlook.com
+
 需配置参数：
 
 1. `rpc`: sol 链的 rpc，默认主网 rpc，需要可自行替换。
 2. `dir`: 需要归集的账户路径，此路径为文件夹，需要的私钥文件为 key.json,数据格式为`Uint8Array`。
 3. `addr`: 主账户公钥地址，所有代币都将归集到此地址。
 4. `token_address`: 需要归集的 `spl-token` 代币合约地址。
+5. `masterPrivateKeyFile`: 主账户私钥文件，数据格式为`Uint8Array`。
 
 运行命令：`ts-node ./src/solana/collect.ts`运行脚本。
 
